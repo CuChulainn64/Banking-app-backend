@@ -135,6 +135,12 @@ public class Transaction {
 	public void setTargetAccount(long targetAccount) {
 		this.targetAccount = targetAccount;
 	}
+
+	@Override
+	public String toString() {
+		return "Transaction [id=" + id + ", type=" + type + ", amount=" + amount + ", time=" + time + ", sourceAccount="
+				+ sourceAccount + ", targetAccount=" + targetAccount + "]";
+	}
 	
 	
 }
